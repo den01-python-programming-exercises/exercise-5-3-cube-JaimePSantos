@@ -1,10 +1,9 @@
 import pytest
 import os
-
+from src.cube import Cube
 def test_exercise():
     os.chdir('src')
 
-    from cube import Cube
     sand = Cube(3)
 
     assert sand.volume() == 27
